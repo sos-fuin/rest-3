@@ -1,0 +1,7 @@
+how run sass ?
+sass --watch ./assets/scss/main.scss:./assets/css/style.css
+  
+
+
+
+

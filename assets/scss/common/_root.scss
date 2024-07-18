@@ -1,0 +1,271 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+ul,
+li {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	user-select: none;
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+button {
+	color: inherit;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+}
+
+img {
+	user-select: none;
+	max-width: 100%;
+	width: 100%;
+}
+
+span {
+	display: inline-flex;
+}
+iframe {
+	width: 100%;
+}
+.ru-container {
+	max-width: 1320px;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 50px);
+	@include responsive('sm') {
+		width: calc(100% - 20px);
+	}
+}
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator,
+input[type='time']::-webkit-inner-spin-button,
+input[type='time']::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
+}
+
+.swiper-pagination {
+	bottom: 72px !important;
+	&-bullet {
+		background-color: #fff;
+		opacity: 1;
+		width: 12px;
+		height: 12px;
+		border-radius: 5px;
+		&-active {
+			background-color: #b99272;
+			opacity: 1;
+			width: 36px;
+		}
+	}
+}
+
+// padding top bottom 72 px
+.py-72 {
+	padding-top: 72px;
+	padding-bottom: 72px;
+	@include responsive('2xl') {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include responsive('lg') {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include responsive('md') {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	@include responsive('sm') {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.pt-72 {
+	padding-top: 72px;
+	@include responsive('2xl') {
+		padding-top: 50px;
+	}
+	@include responsive('lg') {
+		padding-top: 40px;
+	}
+	@include responsive('md') {
+		padding-top: 30px;
+	}
+	@include responsive('sm') {
+		padding-top: 20px;
+	}
+}
+
+.pb-72 {
+	padding-bottom: 72px;
+	@include responsive('2xl') {
+		padding-bottom: 50px;
+	}
+	@include responsive('lg') {
+		padding-bottom: 40px;
+	}
+	@include responsive('md') {
+		padding-bottom: 30px;
+	}
+	@include responsive('sm') {
+		padding-bottom: 20px;
+	}
+}
+
+// padding top bottom 52 px
+.py-52 {
+	padding-top: 52px;
+	padding-bottom: 52px;
+	@include responsive('2xl') {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@include responsive('lg') {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	@include responsive('md') {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	@include responsive('sm') {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+.pt-52 {
+	padding-top: 52px;
+	@include responsive('2xl') {
+		padding-top: 40px;
+	}
+	@include responsive('lg') {
+		padding-top: 30px;
+	}
+	@include responsive('md') {
+		padding-top: 20px;
+	}
+	@include responsive('sm') {
+		padding-top: 15px;
+	}
+}
+
+.pb-52 {
+	padding-bottom: 52px;
+	@include responsive('2xl') {
+		padding-bottom: 40px;
+	}
+	@include responsive('lg') {
+		padding-bottom: 30px;
+	}
+	@include responsive('md') {
+		padding-bottom: 20px;
+	}
+	@include responsive('sm') {
+		padding-bottom: 15px;
+	}
+}
+
+// mt 52
+.mt-52 {
+	margin-top: 52px;
+	@include responsive('2xl') {
+		margin-top: 40px;
+	}
+	@include responsive('lg') {
+		margin-top: 30px;
+	}
+	@include responsive('md') {
+		margin-top: 20px;
+	}
+	@include responsive('sm') {
+		margin-top: 15px;
+	}
+}
+
+// mb 52
+.mb-52 {
+	margin-bottom: 52px;
+	@include responsive('2xl') {
+		margin-bottom: 40px;
+	}
+	@include responsive('lg') {
+		margin-bottom: 30px;
+	}
+	@include responsive('md') {
+		margin-bottom: 20px;
+	}
+	@include responsive('sm') {
+		margin-bottom: 15px;
+	}
+}
+
+// margin bottom 22 px
+.mb-22 {
+	margin-bottom: 22px;
+
+	@include responsive('lg') {
+		margin-bottom: 18px;
+	}
+
+	@include responsive('md') {
+		margin-bottom: 14px;
+	}
+}
+
+// margin top 22 px
+.mt-22 {
+	margin-top: 22px;
+
+	@include responsive('lg') {
+		margin-top: 18px;
+	}
+
+	@include responsive('md') {
+		margin-top: 14px;
+	}
+}
+// padding top 22
+.pt-22 {
+	padding-top: 22px;
+	@include responsive('lg') {
+		padding-top: 18px;
+	}
+	@include responsive('md') {
+		padding-top: 14px;
+	}
+}

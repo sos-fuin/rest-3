@@ -1,0 +1,22 @@
+// common
+@import 'common/variable';
+@import 'common/mixins';
+@import 'common/root';
+@import 'common/all-basic';
+
+// ui
+@import 'ui/button';
+@import 'ui/text';
+@import 'ui/from';
+
+// components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/banner';
+@import 'components/sections';
+@import 'components/play-video';
+@import 'components/breadcrumb';
+@import 'components/components';
+@import 'components/table-reservation';
+@import 'components/pagination';
+@import 'components/modal';

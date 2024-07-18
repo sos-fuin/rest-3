@@ -1,0 +1,307 @@
+.ru-footer {
+	padding-top: 67px;
+	background-image: url('../img/icon/footer-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-color: #0c0e0e;
+	&-top {
+		padding-bottom: 40px;
+		display: flex;
+		gap: 67px;
+		@include responsive('2xl') {
+			gap: 20px;
+		}
+		@include responsive('lg') {
+			flex-direction: column;
+			gap: 30px;
+		}
+		&_left {
+			max-width: 407px;
+			@include responsive('2xl') {
+				max-width: 307px;
+			}
+			@include responsive('lg') {
+				max-width: 500px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			&-logo {
+				img {
+					width: 160px;
+					object-fit: contain;
+					height: 60px;
+					flex-shrink: 0;
+				}
+			}
+			&-text {
+				color: #fff;
+				font-family: Inter;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 133%; /* 21.28px */
+				margin-top: 42px;
+				@include responsive('2xl') {
+					font-size: 14px;
+					margin-top: 30px;
+				}
+			}
+		}
+
+		&_right {
+			display: flex;
+			flex-shrink: 0;
+			flex: 1;
+			justify-content: space-between;
+			@include responsive('md') {
+				flex-direction: column;
+				text-align: center;
+				gap: 30px;
+			}
+			.ru-footer-links {
+				.ru-footer-title {
+					color: #fff;
+					font-family: 'Bebas Neue';
+					font-size: 28px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 25px; /* 89.286% */
+					margin-bottom: 55px;
+					@include responsive('2xl') {
+						margin-bottom: 35px;
+						font-size: 20px;
+					}
+					@include responsive('md') {
+						margin-bottom: 8px;
+					}
+				}
+
+				.ru-footer-list {
+					display: flex;
+					flex-direction: column;
+					gap: 40px;
+					@include responsive('2xl') {
+						gap: 30px;
+					}
+					@include responsive('md') {
+						gap: 12px;
+					}
+					.list {
+						color: #fff;
+						font-family: Inter;
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 700;
+						line-height: normal;
+						white-space: nowrap;
+						text-transform: capitalize;
+						@include responsive('2xl') {
+							font-size: 14px;
+						}
+					}
+				}
+				&.opening-hours {
+					.ru-footer-hours {
+						display: flex;
+						flex-direction: column;
+						gap: 50px;
+						@include responsive('2xl') {
+							gap: 30px;
+						}
+						@include responsive('md') {
+							gap: 0px;
+						}
+						.list {
+							color: #fff;
+							text-align: center;
+							font-family: Inter;
+							font-size: 16px;
+							font-style: normal;
+							font-weight: 700;
+							line-height: 29px; /* 181.25% */
+							@include responsive('2xl') {
+								font-size: 14px;
+							}
+							.day {
+								display: flex;
+								align-items: center;
+								gap: 10px;
+								@include responsive('2xl') {
+									gap: 5px;
+								}
+								@include responsive('md') {
+									justify-content: center;
+								}
+							}
+							.time {
+								color: #b99272;
+								text-align: center;
+								font-family: Inter;
+								font-size: 16px;
+								font-style: normal;
+								font-weight: 700;
+								line-height: 25px; /* 156.25% */
+								margin-top: 16px;
+								margin-left: 30px;
+								@include responsive('2xl') {
+									font-size: 14px;
+									margin-top: 10px;
+									margin-left: 24px;
+								}
+							}
+						}
+					}
+				}
+				&.contact {
+					.ru-footer-contact {
+						display: flex;
+						flex-direction: column;
+						gap: 30px;
+						@include responsive('md') {
+							gap: 12px;
+						}
+					}
+					.lists {
+						display: flex;
+						gap: 12px;
+						@include responsive('md') {
+							justify-content: center;
+							flex-direction: column;
+						}
+						.icon {
+							font-size: 26px;
+							color: #b99272;
+						}
+						.content {
+							.title {
+								color: #fff;
+								font-family: Inter;
+								font-size: 18px;
+								font-style: normal;
+								font-weight: 700;
+								line-height: 100%; /* 18px */
+								margin-bottom: 5px;
+								@include responsive('2xl') {
+									font-size: 14px;
+								}
+							}
+							.value {
+								color: #8a8a8a;
+								font-family: Inter;
+								font-size: 16px;
+								font-style: normal;
+								font-weight: 400;
+								line-height: 100%;
+								@include responsive('2xl') {
+									font-size: 14px;
+								} /* 16px */
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&-bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 1px dashed #cacaca;
+		padding-top: 28px;
+		&_copy {
+			color: #fff;
+			font-family: Inter;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 14px; /* 87.5% */
+			@include responsive('2xl') {
+				font-size: 14px;
+			}
+		}
+
+		&_social {
+			display: flex;
+			align-items: center;
+			color: #fff;
+			font-size: 28px;
+			gap: 50px;
+			@include responsive('2xl') {
+				font-size: 18px;
+				gap: 30px;
+			}
+			@include responsive('sm') {
+				font-size: 14px;
+				gap: 10px;
+			}
+		}
+	}
+}
+
+.fu-news-sub {
+	&-title {
+		color: #fff;
+		font-family: 'Bebas Neue';
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 25px; /* 89.286% */
+		margin-top: 34px;
+		margin-bottom: 21px;
+		@include responsive('2xl') {
+			font-size: 24px;
+		}
+	}
+
+	&-wrap {
+		display: flex;
+		align-items: center;
+		border-radius: 15px;
+		border: 0.5px solid #cacaca;
+		background: #fff;
+	}
+	&-input {
+		display: inline-block;
+		border: none;
+		background: transparent;
+		height: 53px;
+		padding: 18px;
+		width: 100%;
+		font-weight: bold;
+		color: #4d4d4d;
+		@include responsive('2xl') {
+			height: 35px;
+		}
+		&::placeholder {
+			color: #4d4d4d;
+			font-family: Inter;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 14px; /* 87.5% */
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&-btn {
+		font-size: 20px;
+		color: #fff;
+		border-radius: 0px 15px 15px 0px;
+		background: #b99272;
+
+		display: flex;
+		width: 64px;
+		height: 53px;
+		padding: 16px 22px 17px 22px;
+		justify-content: center;
+		align-items: center;
+		@include responsive('2xl') {
+			width: 40px;
+			height: 35px;
+		}
+	}
+}

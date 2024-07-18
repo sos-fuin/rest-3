@@ -1,0 +1,42 @@
+#ru-play-v {
+	position: relative;
+	width: 100%;
+	height: auto;
+	width: 100%;
+	height: 100%;
+
+	#my-video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		max-height: 530px;
+
+		@include responsive('lg') {
+			max-height: 450px;
+		}
+
+		@include responsive('md') {
+			max-height: 400px;
+		}
+
+		@include responsive('sm') {
+			max-height: 300px;
+		}
+	}
+
+	.play-button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 71px;
+		height: 71px;
+		background: url('../video/icon.svg') no-repeat center center;
+		background-size: contain;
+		cursor: pointer;
+	}
+
+	#my-video.playing + .play-button {
+		display: none;
+	}
+}
